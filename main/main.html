@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gep Navbar</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="navbar-inner">
+      <div class="brand">
+        <a href="#" class="brand-logo" aria-label="Gep Protech Academy home">
+          <img src="./main image/gep.jpg" alt="Gep Protech Academy logo">
+        </a>
+        <div class="brand-text">
+          <a href="#" class="brand-title">Gep Protech Academy</a>
+          <div class="brand-pills">
+            <a href="#" class="pill">GeP Student</a>
+            <a href="#" class="pill">GeP Internship</a>
+            <a href="#" class="pill">GeP E-Learning</a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Courses</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Events</a>
+        <a href="#" class="nav-link">Reviews</a>
+      </nav>
+      <div class="actions">
+        <button class="bell" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+          </svg>
+          <span class="bell-dot"></span>
+        </button>
+
+        <a href="#" class="btn btn--gold">Enroll Now</a>
+
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    burger.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

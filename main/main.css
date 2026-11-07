@@ -248,3 +248,60 @@ a {
   .burger span { width: 22px; }
   .nav { padding: 8px 16px 16px; }
 }
+
+.hero {
+    background: burlywood;
+    text-align: left;
+    padding: 70px 30px;
+    font-family: Inter, sans-serif;
+}
+.badge {
+    display: inline-block;
+    padding: 16px 20px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: black;
+}
+.title .yellow {
+    color: yellow;
+    display: block;
+}
+.description {
+    color: black;
+    max-width: 600px;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+.button {
+    margin-top: 28px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.btn-outline {
+    padding: 12px 28px;
+    border: 2px solid;
+    border-radius: 30px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-solid {
+    padding: 12px 28px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
